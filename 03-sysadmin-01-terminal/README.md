@@ -14,13 +14,13 @@
 11. В man bash поищите по `/\[\[`. Что делает конструкция `[[ -d /tmp ]]`
     - Конструкция проверяет, существует ли директория `/tmp`
 12. Основываясь на знаниях о просмотре текущих (например, PATH) и установке новых переменных; командах, которые мы рассматривали, добейтесь в выводе type -a bash в виртуальной машине наличия первым пунктом в списке:  
-    - vagrant@vagrant:~$ mkdir /tmp/new_patch_directory  
-    vagrant@vagrant:~$ cp /bin/bash /tmp/new_patch_directory/  
-    vagrant@vagrant:~$ PATH=/tmp/new_patch_directory/:$PATH  
-    vagrant@vagrant:~$ type -a bash  
-    bash is /tmp/new_patch_directory/bash  
-    bash is /usr/bin/bash  
-    bash is /bin/bash  
+    - `vagrant@vagrant:~$ mkdir /tmp/new_patch_directory `  
+    `vagrant@vagrant:~$ cp /bin/bash /tmp/new_patch_directory/`  
+    `vagrant@vagrant:~$ PATH=/tmp/new_patch_directory/:$PATH`  
+    `vagrant@vagrant:~$ type -a bash`  
+    `bash is /tmp/new_patch_directory/bash`  
+    `bash is /usr/bin/bash`  
+    `bash is /bin/bash`  
 13. Чем отличается планирование команд с помощью `batch` и `at`?
     - `batch` - выполнит команду при определенной нагрузке системы
     - `at` - выполнит команду в указанное время
